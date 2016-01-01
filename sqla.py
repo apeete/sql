@@ -1,11 +1,11 @@
 import sqlite3
 
-conn = sqlite3.connect("new.db")
+conn = sqlite3.connect("cars.db")
 
 cursor = conn.cursor()
 
-cursor.execute("""CREATE TABLE Population
-                (city TEXT, state TEXT, population INT)
+cursor.execute("""CREATE TABLE Inventory
+                (Make TEXT, Model TEXT, Quantity INT)
                 """)
 
 conn.close()
